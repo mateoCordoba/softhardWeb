@@ -1,0 +1,55 @@
+#page_top{
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: absolute;
+  background-size: cover;
+}
+
+
+section{
+  background-color:white ;
+  opacity: 0.6;
+}
+.vacio{
+  height: 200px;
+}
+.vacio h1{
+  position:fixed-bottom;
+}
+.crudProducto{
+  height: 200px;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+
+}
+
+h1{
+  color: white;
+}
+.container, .container img{
+  position: static;
+  text-align: center;
+  margin-top: 1px;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-bottom: 1px;
+}
+.container img.mx-auto, img.rounded-circle{
+  height:75px;
+  width: 75px;
+}
+.titleCrud{
+  text-align: center;
+}
+.btn{
+  font-size: 14px;
+  background-color: black;
+  color: #8EB1CB;
+  border-color: black;
+}
+.add, .ver{
+  margin-left: 375px;
+  margin-right: 100px;
+  background-color: white;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SOFTHARD ADMIN</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Soft-Hard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link type="text/css" href="css/softhard.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/diagrama.min.css">
+  </head>
+  <body id="page_top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <img id=logonav src="img/logos/softhard_fullpawer.png" alt="">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">SOFT-HARD </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Usuarios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Estadisticas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#modalSignIn">Cerrar sesion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br><br><br><br><br><br>
+
+      <h1>Crud Productos</h1>
+
+    <section class="crudProducto" >
+
+      <div class="container">
+        <div class="row text-center">
+          <div class="add">
+            <a data-toggle="modal" data-target="#modalAddProducto"><img class="mx-auto rounded-circle" src="img/simbolos/addProduct.png" alt="Agregar productos"> <p>Agregar Producto</p> <a/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+          <div clas="ver">
+            <a data-toggle="modal" data-target="#modalInventario"><img class="mx-auto rounded-circle" src="img/simbolos/ver.png" alt="ver inventario"><p> Inventaerio</p><a/>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="vacio"> <h1>Estadisticas</h1> </div>
+    <section class="diagramas">
+      <div class="container-fluid">
+        <canvas id="myChart" style="max-width: 500px;"></canvas>
+
+        <!-- Content Row -->
+
+        <div class="row">
+
+          <!-- Area Chart -->
+          <div class="col-xl-8 col-lg-7">
+            <div class="card shadow mb-4">
+              <!-- Card Header - Dropdown -->
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                <div class="dropdown no-arrow">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Dropdown Header:</div>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card Body -->
+              <div class="card-body">
+                <div class="chart-area">
+                  <canvas id="myAreaChart"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pie Chart -->
+          <div class="col-xl-4 col-lg-5">
+            <div class="card shadow mb-4">
+              <!-- Card Header - Dropdown -->
+              <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                <div class="dropdown no-arrow">
+                  <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                    <div class="dropdown-header">Dropdown Header:</div>
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card Body -->
+              <div class="card-body">
+                <div class="chart-pie pt-4 pb-2">
+                  <canvas id="myPieChart"></canvas>
+                </div>
+                <div class="mt-4 text-center small">
+                  <span class="mr-2">
+                    <i class="fas fa-circle text-primary"></i> Direct
+                  </span>
+                  <span class="mr-2">
+                    <i class="fas fa-circle text-success"></i> Social
+                  </span>
+                  <span class="mr-2">
+                    <i class="fas fa-circle text-info"></i> Referral
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  <!-- end container fluid -->
+    </section>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- ///////////////////////////////////////// Ventanas modales ////////////////////////////////////////////////////-->
+
+<!-- modal agregar producto -->
+    <div id="modalAddProducto" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Agregar producto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="add_prod_id">Número de serie *</label>
+                <input type="text" class="form-control" id="add_prod_id" required data-validation-required-message="Campo obligatorio">
+              </div>
+              <div class="form-group">
+                <label for="add_prod_nombre">Nombre *</label>
+                <input type="text" class="form-control" id="add_prod_nombre" required data-validation-required-message="Campo obligatorio">
+              </div>
+              <div class="form-group">
+                <label for="add_prod_marca">Marca *</label>
+                <input type="text" class="form-control" id="add_prod_marca" required data-validation-required-message="Campo obligatorio">
+              </div>
+              <div class="form-group">
+                <label for="add_prod_ref">Referencia *</label>
+                <input type="text" class="form-control" id="add_prod_ref" required data-validation-required-message="Campo obligatorio">
+              </div>
+              <div class="form-group">
+                <label for="add_prod_desc">Descripción *</label>
+                <input type="textarea" class="form-control" id="add_prod_desc" required data-validation-required-message="Campo obligatorio">
+              </div>
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-dark">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal agregar producto -->
+
+<!-- modal inventario -->
+
+<div  id="modalInventario" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <h5 class="modal-title">Inventario</h5>
+
+      <div class="modal-body">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Serial</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Descripción</th>
+              <th colspan="3" scope="col">Descripción</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">111</th>
+              <td>Memorai Ram </td>
+              <td>Starsfot</td>
+              <td>8 GB</td>
+              <td><button type="button" class="btn btn-light">Eliminar</button></td>
+              <td><button type="button" class="btn btn-light">Editar</button></td>
+              <td><button type="button" class="btn btn-light">Ficha</button></td>
+            </tr>
+            <tr>
+              <th scope="row">222</th>
+              <td>fuente de poder </td>
+              <td>technomaster</td>
+              <td>800w</td>
+              <td><button type="button" class="btn btn-light">Eliminar</button></td>
+              <td><button type="button" class="btn btn-light">Editar</button></td>
+              <td><button type="button" class="btn btn-light">Ficha</button></td>
+            </tr>
+            <tr>
+              <th scope="row">333</th>
+              <td>procesador</td>
+              <td>intel</td>
+              <td>core i7 8th Generacion</td>
+              <td><button type="button" class="btn btn-light">Eliminar</button></td>
+              <td><button type="button" class="btn btn-light">Editar</button></td>
+              <td><button type="button" class="btn btn-light">Ficha</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- end Modal Inventario -->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/softhard.min.js"></script>
+    <!--EL diagramas-->
+    <script src="js/diagrama.js"></script>
+  </body>
+</html>

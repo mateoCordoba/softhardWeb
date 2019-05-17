@@ -21,7 +21,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/softhard.css" rel="stylesheet">
+  <link type="text/css" href="css/softhard.css" rel="stylesheet">
 
 </head>
 
@@ -56,12 +56,10 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#modalSignIn">Registrarse</a>
           </li>
-
-
         </ul>
       </div>
     </div>
-  </nav>}
+  </nav>
 
   <!-- Header -->
   <header class="masthead">
@@ -694,8 +692,14 @@
         </div>
         <div class="modal-body">
           <form class="modalSignInForm" action="index.html" method="post">
-            <input type="text" placeholder="Nombre de usuario*"><br>
-            <input type="password" placeholder="Contraseña*" required data-validation-required-message="Campo obligatorio"><br><br>
+            <div class="form-group">
+              <label for="login_nomreDeUsuario">Nombre de usuario *</label>
+              <input type="text" class="form-control" id="reg_per_nomreDeUsuario" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="login_contraseña">Contraseña *</label>
+              <input type="password" class="form-control" id="reg_per_contraseña" required data-validation-required-message="Campo obligatorio">
+            </div>
           </form>
         </div>
         <div class="modal-footer">
@@ -722,67 +726,103 @@
     </div>
   </div>
 
-<!-- modal SignIn Company  -->
+<!-- modal Registrar Empresa -->
 
-    <div id="modalSignInCompany" class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Registrar Empresa o Negocio</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-
-            <form class="modalSignInForm" action="index.html" method="post">
-              <input type="text" placeholder="Nombre de la empresa *" required data-validation-required-message="Campo obligatorio"><br>
-              <input type="text" placeholder="Nit *" required datavalidation-required-message="Campo obligatorio"><br>
-              <input type="text" placeholder="Razón social *" required data-validation-required-message="Campo obligatorio"><br>
-              <input type="text" placeholder="E-mail *"required data-validation-required-message="Campo obligatorio"><br>
-              <input type="text" placeholder="Dirección completa *" required data-validation-required-message="Campo obligatorio" ><br>
-              <input type="text" placeholder="Página web"><br>
-              <input type="text" placeholder="Nombre de usuario *" required data-validation-required-message="Campo obligatorio"><br>
-              <input type="password" placeholder="Contraseña *" required data-validation-required-message="Campo obligatorio"><br>
-            </form>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>&nbsp;
-            <button type="button" class="btn btn-dark">Ingresar</button>
-          </div>
+  <div id="modalSignInCompany" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Registrar Empresa o Negocio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="reg_em_nombreEmpresa">Nombre de la empresa *</label>
+              <input type="text" class="form-control" id="reg_em_nombreEmpresa" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_em_apellido">Nit *</label>
+              <input type="text" class="form-control" id="reg_em_apellido" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_em_apellido">Razon social *</label>
+              <input type="text" class="form-control" id="reg_em_apellido" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_em_email">E-mail *</label>
+              <input type="text" class="form-control" id="reg_em_email" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_em_email">Dirección completa *</label>
+              <input type="text" class="form-control" id="reg_em_DireccionCompleta" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_em_email">Página web *</label>
+              <input type="text" class="form-control" id="reg_em_DireccionCompleta" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_per_nomreDeUsuario">Nombre de usuario</label>
+              <input type="text" class="form-control" id="reg_em_nomreDeUsuario" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Contraseña</label>
+              <input type="password" class="form-control" id="reg_em_contraseña" required data-validation-required-message="Campo obligatorio">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>&nbsp;
+          <button type="button" class="btn btn-dark">Ingresar</button>
         </div>
       </div>
     </div>
+  </div>
 
+  <!-- modal Resgistrar persona normal -->
 
-    <!-- modal sign in normal person -->
-
-    <div id="modalsignInPerson" class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Registrarse como Persona</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form class="modalSignInForm" action="index.html" method="post">
-              <input type="text" placeholder="Nombre *" required data-validation-required-message="Campo obligatorio"><br>
-              <input type="text" placeholder="Apellido *" required data-validation-required-message="Campo obligatorio"><br>
-              <input type="text" placeholder="E-mail *"required data-validation-required-message="Campo obligatorio"><br>
-              <input type="text" placeholder="Nombre de usuario *" required data-validation-required-message="Campo obligatorio"><br>
-              <input type="text" placeholder="Contraseña *" required data-validation-required-message="Campo obligatorio"><br>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-dark" data-dismiss="modal">Cancelar</button>
-            <button type="button" class="btn btn-dark">Resgistrarse</button>
-          </div>
+  <div id="modalsignInPerson" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Registrarse como Persona</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="reg_per_nombre">Nombre *</label>
+              <input type="text" class="form-control" id="reg_per_nombre" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_per_apellido">Apellido *</label>
+              <input type="text" class="form-control" id="reg_per_apellido" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_per_email">E-mail *</label>
+              <input type="text" class="form-control" id="reg_per_email" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_per_nomreDeUsuario">Nombre de usuario *</label>
+              <input type="text" class="form-control" id="reg_per_nomreDeUsuario" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_per_contraseña">Contraseña *</label>
+              <input type="password" class="form-control" id="reg_per_contraseña" required data-validation-required-message="Campo obligatorio">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-dark">Resgistrarse</button>
         </div>
       </div>
     </div>
+  </div>
 
 <!-- //////////////////////////////////////////// end LOG AND SIGN //////////////////////////-->
 
