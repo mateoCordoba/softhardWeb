@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lumino - Dashboard</title>
+	<title>Lumino - Charts</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/datepicker3.css" rel="stylesheet">
@@ -24,8 +24,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="#"><span>Soft</span>Hard</a>
-
+				<a class="navbar-brand" href="#"><span>Soft</span>hard</a>
 				<ul class="nav navbar-top-links navbar-right">
 					<li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
 						<em class="fa fa-envelope"></em><span class="label label-danger">15</span>
@@ -100,11 +99,14 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li class="active"><a href="index.html"><em class="fa fa-dashboard">&nbsp;</em>Tabla</a></li>
-			<li><a href="widgets.html"><em class="fa fa-calendar">&nbsp;</em>Agenda</a></li>
-			<li><a href="charts.html"><em class="fa fa-bar-chart">&nbsp;</em> Estadisticas</a></li>
-			<li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> Editar Usuario</a></li>
-			<li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Editar Productos</a></li>
+			<li><a href="admin.html"><em class="fa fa-dashboard">&nbsp;</em> Tabla</a></li>
+			<li><a href="widgets.html"><em class="fa fa-calendar">&nbsp;</em> Agenda</a></li>
+			<li class="active"><a href="charts.html"><em class="fa fa-bar-chart">&nbsp;</em> Estadisticas</a></li>
+			
+			<li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> Editar usuarios</a></li>
+
+			<li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Editar productos</a></li>
+			
 			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Cerrar sesion</a></li>
 		</ul>
 	</div><!--/.sidebar-->
@@ -115,57 +117,52 @@
 				<li><a href="#">
 					<em class="fa fa-home"></em>
 				</a></li>
-				<li class="active"><a href="login.html"></a> Tablas</li>
+				<li class="active">Estadisticas</li>
 			</ol>
 		</div><!--/.row-->
 		
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">Tablas</h1>
+				<h1 class="page-header">Estadisticas</h1>
 			</div>
 		</div><!--/.row-->
 		
-		<div class="panel panel-container">
-			<div class="row">
-				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-					<div class="panel panel-teal panel-widget border-right">
-						<div class="row no-padding"><em class="fa fa-xl fa-shopping-cart color-blue"></em>
-							<div class="large">120</div>
-							<div class="text-muted">Nuevas ordenes</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-					<div class="panel panel-blue panel-widget border-right">
-						<div class="row no-padding"><em class="fa fa-xl fa-comments color-orange"></em>
-							<div class="large">52</div>
-							<div class="text-muted">Comentarios</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-					<div class="panel panel-orange panel-widget border-right">
-						<div class="row no-padding"><em class="fa fa-xl fa-users color-teal"></em>
-							<div class="large">24</div>
-							<div class="text-muted">Nuevos usuarios</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-3 col-lg-3 no-padding">
-					<div class="panel panel-red panel-widget ">
-						<div class="row no-padding"><em class="fa fa-xl fa-search color-red"></em>
-							<div class="large">25.2k</div>
-							<div class="text-muted">Nuevas vistas</div>
-						</div>
-					</div>
-				</div>
-			</div><!--/.row-->
-		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56%</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27%</span></div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Información general del tráfico del sitio
+						Line Chart
 						<ul class="pull-right panel-settings panel-button-tab-right">
 							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
 								<em class="fa fa-cogs"></em>
@@ -200,45 +197,10 @@
 		</div><!--/.row-->
 		
 		<div class="row">
-			<div class="col-xs-6 col-md-3">
+			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Nuevas ordenes</h4>
-						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Comentarios</h4>
-						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Nuevos usuarios</h4>
-						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56%</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<h4>Nuevas vistas</h4>
-						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27%</span></div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->
-		
-		<div class="row">
-			<div class="col-md-6">
-				<div class="panel panel-default chat">
 					<div class="panel-heading">
-						Chat
+						Bar Chart
 						<ul class="pull-right panel-settings panel-button-tab-right">
 							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
 								<em class="fa fa-cogs"></em>
@@ -264,49 +226,19 @@
 						</ul>
 						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
 					<div class="panel-body">
-						<ul>
-							<li class="left clearfix"><span class="chat-img pull-left">
-								<div class="profile-userpic">
-									<img src="img/1.jpg" class="img-responsive" alt="">
-								</div>
-								</span>
-								<div class="chat-body clearfix">
-									<div class="header"><strong class="primary-font">Jeison Sanchez</strong> <small class="text-muted">32 min</small></div>
-									<p>Tu cuenta sera Eliminada por incumplimiento de requisitos del ADMON</p>
-								</div>
-							</li>
-							<li class="right clearfix"><span class="chat-img pull-right">
-								<div class="profile-userpic">
-									<img src="img/2.jpg" class="img-responsive" alt="">
-								</div>
-								</span>
-								<div class="chat-body clearfix">
-									<div class="header"><strong class="pull-left primary-font">Jorge segundo</strong> <small class="text-muted">6 min</small></div>
-									<p>No podria hacer algo para evitar esa sancion</p>
-								</div>
-							</li>
-							<li class="left clearfix"><span class="chat-img pull-left">
-								<div class="profile-userpic">
-									<img src="img/1.jpg" class="img-responsive" alt="">
-								</div>
-								</span>
-								<div class="chat-body clearfix">
-									<div class="header"><strong class="primary-font">Jeison Sanchez</strong> <small class="text-muted">32 min</small></div>
-									<p>NO. Esta cuenta se dasabilitara en 24hrs</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="panel-footer">
-						<div class="input-group">
-							<input id="btn-input" type="text" class="form-control input-md" placeholder="ingrese Mensaje" /><span class="input-group-btn">
-								<button class="btn btn-primary btn-md" id="btn-chat">Buscar</button>
-						</span></div>
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="bar-chart" height="200" width="600"></canvas>
+						</div>
 					</div>
 				</div>
+			</div>
+		</div><!--/.row-->		
+		
+		<div class="row">
+			<div class="col-md-6">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Buscar persona
+						Pie Chart
 						<ul class="pull-right panel-settings panel-button-tab-right">
 							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
 								<em class="fa fa-cogs"></em>
@@ -331,24 +263,128 @@
 							</li>
 						</ul>
 						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
-
-					<div class="panel-footer">
-						<div class="input-group">
-							<input id="btn-input" type="text" class="form-control input-md" placeholder="Ingresa nombre" /><span class="input-group-btn">
-								<button class="btn btn-primary btn-md" id="btn-todo">Buscar</button>
-						</span></div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="chart" id="pie-chart" ></canvas>
+						</div>
 					</div>
 				</div>
-			</div><!--/.col-->
-			
-			
-			<!--/.col-->
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Doughnut Chart
+						<ul class="pull-right panel-settings panel-button-tab-right">
+							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
+								<em class="fa fa-cogs"></em>
+							</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li>
+										<ul class="dropdown-settings">
+											<li><a href="#">
+												<em class="fa fa-cog"></em> Settings 1
+											</a></li>
+											<li class="divider"></li>
+											<li><a href="#">
+												<em class="fa fa-cog"></em> Settings 2
+											</a></li>
+											<li class="divider"></li>
+											<li><a href="#">
+												<em class="fa fa-cog"></em> Settings 3
+											</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="chart" id="doughnut-chart" ></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Radar Chart
+						<ul class="pull-right panel-settings panel-button-tab-right">
+							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
+								<em class="fa fa-cogs"></em>
+							</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li>
+										<ul class="dropdown-settings">
+											<li><a href="#">
+												<em class="fa fa-cog"></em> Settings 1
+											</a></li>
+											<li class="divider"></li>
+											<li><a href="#">
+												<em class="fa fa-cog"></em> Settings 2
+											</a></li>
+											<li class="divider"></li>
+											<li><a href="#">
+												<em class="fa fa-cog"></em> Settings 3
+											</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="chart" id="radar-chart" ></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Polar Area Chart
+						<ul class="pull-right panel-settings panel-button-tab-right">
+							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
+								<em class="fa fa-cogs"></em>
+							</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li>
+										<ul class="dropdown-settings">
+											<li><a href="#">
+												<em class="fa fa-cog"></em> Settings 1
+											</a></li>
+											<li class="divider"></li>
+											<li><a href="#">
+												<em class="fa fa-cog"></em> Settings 2
+											</a></li>
+											<li class="divider"></li>
+											<li><a href="#">
+												<em class="fa fa-cog"></em> Settings 3
+											</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="chart" id="polar-area-chart" ></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="col-sm-12">
 				<p class="back-link">Lumino Theme by <a href="https://www.medialoot.com">Medialoot</a></p>
 			</div>
 		</div><!--/.row-->
 	</div>	<!--/.main-->
-	
+	  
+
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chart.min.js"></script>
@@ -358,7 +394,7 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/custom.js"></script>
 	<script>
-		window.onload = function () {
+	window.onload = function () {
 	var chart1 = document.getElementById("line-chart").getContext("2d");
 	window.myLine = new Chart(chart1).Line(lineChartData, {
 	responsive: true,
@@ -366,8 +402,36 @@
 	scaleGridLineColor: "rgba(0,0,0,.05)",
 	scaleFontColor: "#c5c7cc"
 	});
+	var chart2 = document.getElementById("bar-chart").getContext("2d");
+	window.myBar = new Chart(chart2).Bar(barChartData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	scaleGridLineColor: "rgba(0,0,0,.05)",
+	scaleFontColor: "#c5c7cc"
+	});
+	var chart3 = document.getElementById("doughnut-chart").getContext("2d");
+	window.myDoughnut = new Chart(chart3).Doughnut(doughnutData, {
+	responsive: true,
+	segmentShowStroke: false
+	});
+	var chart4 = document.getElementById("pie-chart").getContext("2d");
+	window.myPie = new Chart(chart4).Pie(pieData, {
+	responsive: true,
+	segmentShowStroke: false
+	});
+	var chart5 = document.getElementById("radar-chart").getContext("2d");
+	window.myRadarChart = new Chart(chart5).Radar(radarData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.05)",
+	angleLineColor: "rgba(0,0,0,.2)"
+	});
+	var chart6 = document.getElementById("polar-area-chart").getContext("2d");
+	window.myPolarAreaChart = new Chart(chart6).PolarArea(polarData, {
+	responsive: true,
+	scaleLineColor: "rgba(0,0,0,.2)",
+	segmentShowStroke: false
+	});
 };
-	</script>
-		
+	</script>	
 </body>
 </html>
