@@ -8,7 +8,7 @@
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/datepicker3.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	
+
 	<!--Custom Font-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 	<!--[if lt IE 9]>
@@ -102,15 +102,15 @@
 			<li><a href="admin.html"><em class="fa fa-dashboard">&nbsp;</em> Tabla</a></li>
 			<li><a href="widgets.html"><em class="fa fa-calendar">&nbsp;</em> Agenda</a></li>
 			<li class="active"><a href="charts.html"><em class="fa fa-bar-chart">&nbsp;</em> Estadisticas</a></li>
-			
+
 			<li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> Editar usuarios</a></li>
 
 			<li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Editar productos</a></li>
-			
+
 			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Cerrar sesion</a></li>
 		</ul>
 	</div><!--/.sidebar-->
-		
+
 	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
 		<div class="row">
 			<ol class="breadcrumb">
@@ -120,49 +120,20 @@
 				<li class="active">Estadisticas</li>
 			</ol>
 		</div><!--/.row-->
-		
+
 		<div class="row">
 			<div class="col-lg-12">
 				<h1 class="page-header">Estadisticas</h1>
 			</div>
 		</div><!--/.row-->
-		
-		<div class="row">
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-teal" data-percent="56" ><span class="percent">56%</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-blue" data-percent="92" ><span class="percent">92%</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-orange" data-percent="65" ><span class="percent">65%</span></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-body easypiechart-panel">
-						<div class="easypiechart" id="easypiechart-red" data-percent="27" ><span class="percent">27%</span></div>
-					</div>
-				</div>
-			</div>
-		</div><!--/.row-->
-		
+
+
+<!-- /////// //////////////////////////   Productos  ///////////////////////// -->
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Line Chart
+						Productos
 						<ul class="pull-right panel-settings panel-button-tab-right">
 							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
 								<em class="fa fa-cogs"></em>
@@ -170,17 +141,10 @@
 								<ul class="dropdown-menu dropdown-menu-right">
 									<li>
 										<ul class="dropdown-settings">
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 1
-											</a></li>
+											<li><a href="#"><em class="fa fa-cog"></em> Agregrar produto</a></li>
 											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 2
-											</a></li>
-											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 3
-											</a></li>
+											<li><a href="#"><em class="fa fa-cog"></em> Ver inventario</a></li><li class="divider"></li>
+
 										</ul>
 									</li>
 								</ul>
@@ -188,19 +152,49 @@
 						</ul>
 						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
 					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="line-chart" height="200" width="600"></canvas>
-						</div>
+						<table class="table table-dark">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">First</th>
+						      <th scope="col">Last</th>
+						      <th scope="col">Handle</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>Mark</td>
+						      <td>Otto</td>
+						      <td>@mdo</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">2</th>
+						      <td>Jacob</td>
+						      <td>Thornton</td>
+						      <td>@fat</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">3</th>
+						      <td>Larry</td>
+						      <td>the Bird</td>
+						      <td>@twitter</td>
+						    </tr>
+						  </tbody>
+						</table>
 					</div>
 				</div>
 			</div>
 		</div><!--/.row-->
-		
+
+     <!--///////////////////////////TABLA DE  CLIENTES ////////////////////////////////////7 -->
+
+		 <!--///////////////////////////TABLA DE  USUARIOS////////////////////////////////////7 -->
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Bar Chart
+						Usuarios
 						<ul class="pull-right panel-settings panel-button-tab-right">
 							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
 								<em class="fa fa-cogs"></em>
@@ -208,17 +202,10 @@
 								<ul class="dropdown-menu dropdown-menu-right">
 									<li>
 										<ul class="dropdown-settings">
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 1
-											</a></li>
 											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 2
-											</a></li>
+											<li><a href="#"><em class="fa fa-cog"></em>Agregar usuario</a></li>
 											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 3
-											</a></li>
+											<li><a href="#"><em class="fa fa-cog"></em>Ver usuarios</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -226,19 +213,170 @@
 						</ul>
 						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
 					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="main-chart" id="bar-chart" height="200" width="600"></canvas>
-						</div>
+						<table class="table table-dark">
+						  <thead>
+						    <tr>
+						      <th scope="col">D.I</th>
+						      <th scope="col">Nombre</th>
+						      <th scope="col">Apellido</th>
+						      <th scope="col">E-mail</th>
+									<th scope="col">password</th>
+
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">D.I</th>
+						      <td>Mateo</td>
+									<td>Cordoba</td>
+						      <td>lmcordoba988@misena.edu.co</td>
+									<td>********</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">D.I</th>
+						      <td>Jeison</td>
+						      <td>Sanchez</td>
+						      <td>jasanches9649@misena.edu.co</td>
+									<td>********</td>
+						    </tr>
+						  </tbody>
+						</table>
 					</div>
 				</div>
 			</div>
-		</div><!--/.row-->		
-		
+		</div><!--/.row-->
+
+
+		<!-- /////// //////////////////////////   Empresas  ///////////////////////// -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Productos
+						<ul class="pull-right panel-settings panel-button-tab-right">
+							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
+								<em class="fa fa-cogs"></em>
+							</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li>
+										<ul class="dropdown-settings">
+											<li class="divider"></li>
+											<li><a href="#"><em class="fa fa-cog"></em>Agregar empresa</a></li>
+											<li class="divider"></li>
+											<li><a href="#"><em class="fa fa-cog"></em>Ver empresas</a></li>
+
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
+					<div class="panel-body">
+						<table class="table table-dark">
+						  <thead>
+						    <tr>
+						      <th scope="col">#</th>
+						      <th scope="col">First</th>
+						      <th scope="col">Last</th>
+						      <th scope="col">Handle</th>
+									<th scope="col">#</th>
+						      <th scope="col">First</th>
+						      <th scope="col">Last</th>
+						      <th scope="col">Handle</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>Mark</td>
+						      <td>Otto</td>
+						      <td>@mdo</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">2</th>
+						      <td>Jacob</td>
+						      <td>Thornton</td>
+						      <td>@fat</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">3</th>
+						      <td>Larry</td>
+						      <td>the Bird</td>
+						      <td>@twitter</td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+
+		<!--///////////////////////////tabla de proveedores ////////////////////////////////////7 -->
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Proveedores
+						<ul class="pull-right panel-settings panel-button-tab-right">
+							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
+								<em class="fa fa-cogs"></em>
+							</a>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li>
+										<ul class="dropdown-settings">
+											<li><a href="#"><em class="fa fa-cog"></em>Agregar Proveedor</a></li>
+											<li class="divider"></li>
+											<li><a href="#"><em class="fa fa-cog"></em>Ver proveedores</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
+					<div class="panel-body">
+						<table class="table table-dark">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">First</th>
+									<th scope="col">Last</th>
+									<th scope="col">Handle</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+
+
+<!-- ////////////////////  DIAGRAMA DE PERMANENCIA DEL PRODUCTO EN INVENTARIO   //////////////////////7-->
 		<div class="row">
 			<div class="col-md-6">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						Pie Chart
+						Salidas vs entradas
 						<ul class="pull-right panel-settings panel-button-tab-right">
 							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
 								<em class="fa fa-cogs"></em>
@@ -246,17 +384,7 @@
 								<ul class="dropdown-menu dropdown-menu-right">
 									<li>
 										<ul class="dropdown-settings">
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 1
-											</a></li>
-											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 2
-											</a></li>
-											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 3
-											</a></li>
+											<li><a href="#"><em class="fa fa-cog"></em> Cambiar colores</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -270,120 +398,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						Doughnut Chart
-						<ul class="pull-right panel-settings panel-button-tab-right">
-							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
-								<em class="fa fa-cogs"></em>
-							</a>
-								<ul class="dropdown-menu dropdown-menu-right">
-									<li>
-										<ul class="dropdown-settings">
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 1
-											</a></li>
-											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 2
-											</a></li>
-											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 3
-											</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="chart" id="doughnut-chart" ></canvas>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div><!--/.row-->
-		
-		<div class="row">
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						Radar Chart
-						<ul class="pull-right panel-settings panel-button-tab-right">
-							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
-								<em class="fa fa-cogs"></em>
-							</a>
-								<ul class="dropdown-menu dropdown-menu-right">
-									<li>
-										<ul class="dropdown-settings">
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 1
-											</a></li>
-											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 2
-											</a></li>
-											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 3
-											</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="chart" id="radar-chart" ></canvas>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						Polar Area Chart
-						<ul class="pull-right panel-settings panel-button-tab-right">
-							<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
-								<em class="fa fa-cogs"></em>
-							</a>
-								<ul class="dropdown-menu dropdown-menu-right">
-									<li>
-										<ul class="dropdown-settings">
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 1
-											</a></li>
-											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 2
-											</a></li>
-											<li class="divider"></li>
-											<li><a href="#">
-												<em class="fa fa-cog"></em> Settings 3
-											</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-						<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
-					<div class="panel-body">
-						<div class="canvas-wrapper">
-							<canvas class="chart" id="polar-area-chart" ></canvas>
-						</div>
-					</div>
-				</div>
-			</div>
+
+
+
 			<div class="col-sm-12">
 				<p class="back-link">Lumino Theme by <a href="https://www.medialoot.com">Medialoot</a></p>
 			</div>
 		</div><!--/.row-->
 	</div>	<!--/.main-->
-	  
+
 
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -432,6 +456,6 @@
 	segmentShowStroke: false
 	});
 };
-	</script>	
+	</script>
 </body>
 </html>
