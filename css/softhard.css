@@ -14,15 +14,15 @@ p {
 }
 
 a {
-  color: whit;
+  color: white;
 }
 
 a:hover {
-  color: blue;
+  color: white;
 }
 
 .text-primary {
-  color: #8EB1CB !important;
+  color: #1783d3 !important;
 }
 
 h1,
@@ -56,7 +56,7 @@ section h3.section-subheading {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+
   }
 }
 
@@ -82,13 +82,13 @@ section h3.section-subheading {
 }
 
 .btn-primary:active, .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem #8EB1CB !important;
-  box-shadow: 0 0 0 0.2rem #8EB1CB !important;
+  -webkit-box-shadow: 0 0 0 0.2rem #1783d3 !important;
+  box-shadow: 0 0 0 0.2rem #1783d3 !important;
 }
 
 
 ::selection {
-  background: #8EB1CB;
+  background: #1783d3;
   text-shadow: none;
 }
 
@@ -125,7 +125,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color:#8EB1CB;
+  color:#1783d3;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -138,7 +138,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color:#8EB1CB;
+  color:#1783d3;
 }
 
 @media (min-width: 992px) {
@@ -173,7 +173,6 @@ header.masthead {
   text-align: center;
   color: white;
   background-image: url("../img/header-bg.jpg");
-  opacity: 0.9;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: absolute;
@@ -206,8 +205,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -227,7 +225,7 @@ header.masthead .intro-text .intro-heading {
 
   .logo, #myLogo{
     position: center;
-    margin-left: 150px;
+    margin-left: 110px;
     height: 400px;
     width: 500px;
 
@@ -392,7 +390,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #8EB1CB;
+  background-color: #1783d3;
 }
 
 .timeline > li .timeline-image h4 {
@@ -543,9 +541,10 @@ header.masthead .intro-text .intro-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.91;
 }
 
 section#contact .section-heading {

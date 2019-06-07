@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
@@ -21,6 +21,12 @@
   <!-- Custom styles for this template -->
   <link type="text/css" href="css/softhard.css" rel="stylesheet">
 
+  <!--Custom Font for widgets and elements-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 </head>
 
 <body id="page-top">
@@ -48,10 +54,10 @@
             <a class="nav-link js-scroll-trigger" href="#contact">Contactenos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="login.html">Ingresar</a>
+            <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#modalLogIn">Ingresar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#modalSignIn">Registrarse</a>
+            <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#modalReg">Registrarse</a>
           </li>
         </ul>
       </div>
@@ -124,8 +130,8 @@
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <i> <p>producto</p> </i>
-                <i> <p>$$$$$$$</p> </i>
+                <p> <i>producto</i> </p>
+                <p> <i>$$$$$$$</i> </p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
@@ -136,8 +142,8 @@
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <i> <p>producto</p> </i>
-                <i> <p>$$$$$$$</p> </i>
+                <p> <i>producto</i> </p>
+                <p> <i>$$$$$$$</i> </p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
@@ -148,8 +154,8 @@
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <i> <p>producto</p> </i>
-                <i> <p>$$$$$$$</p> </i>
+                <p> <i>producto</i> </p>
+                <p> <i>$$$$$$$</i> </p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/03-thumbnail.jpeg" alt="">
@@ -160,8 +166,8 @@
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <i> <p>producto</p> </i>
-                <i> <p>$$$$$$$</p> </i>
+                <p> <i>producto</i> </p>
+                <p> <i>$$$$$$$</i> </p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/04-thumbnail.jpeg" alt="">
@@ -172,8 +178,8 @@
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <i> <p>producto</p> </i>
-                <i> <p>$$$$$$$</p> </i>
+                <p> <i>producto</i> </p>
+                <p> <i>$$$$$$$</i> </p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
@@ -184,8 +190,8 @@
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
-                <i> <p>producto</p> </i>
-                <i> <p>$$$$$$$</p> </i>
+                <p> <i>producto</i> </p>
+                <p> <i>$$$$$$$</i> </p>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
@@ -294,8 +300,7 @@
             <p class="text-muted">Programador</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
+                <a href="#"><i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li class="list-inline-item">
@@ -318,26 +323,21 @@
             <p class="text-muted">Programador</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/theo.cordoba">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
+                <a href="https://www.facebook.com/theo.cordoba"><i class="fab fa-facebook-f"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
               </li>
             </ul>
           </div>
         </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -658,9 +658,9 @@
 
 <!-- ///////////////////////////////  MODAL LOG AND SiGN iN  //////////////////////////////-->
 
-<!-- modalLogIn -->
+  <!-- modalLogIn -->
 
-  <div id="modalLogIn" class="modal" tabindex="-1" role="dialog">
+  <div id="modalLogIn" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -670,44 +670,46 @@
           </button>
         </div>
         <div class="modal-body">
-          <form class="modalSignInForm" action="index.html" method="post">
+          <form class="modalRegForm" action="index.html" method="post">
             <div class="form-group">
               <label for="login_nomreDeUsuario">Nombre de usuario *</label>
-              <input type="text" class="form-control" id="reg_per_nomreDeUsuario" required data-validation-required-message="Campo obligatorio">
+              <input type="text" class="form-control" id="login_nomreDeUsuario" required data-validation-required-message="Campo obligatorio">
             </div>
             <div class="form-group">
-              <label for="login_contraseña">Contraseña *</label>
-              <input type="password" class="form-control" id="reg_per_password" required data-validation-required-message="Campo obligatorio">
+              <label for="login_password">Contraseña *</label>
+              <input type="password" class="form-control" id="login_password" required data-validation-required-message="Campo obligatorio">
             </div>
           </form>
         </div>
         <div class="modal-footer">
+          <button type="button" class="btn btn-dark">Olvidé mi contraseña</button>
           <button type="button" class="btn btn-dark" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-dark">Ingresar</button>
+          <button type="button" class="btn btn-dark" onclick="location.href='inicio_admin.html'">Ingresar</button>
         </div>
       </div>
     </div>
   </div>
-    <!-- modal sign in   -->
-  <div id="modalSignIn" class="modal" tabindex="-1" role="dialog">
+
+    <!-- modal Registrarse   -->
+  <div id="modalReg" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">Registrarse</h5>
+        <div class="modal-header">
+          <h5 class="modal-title">Registrarse</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalSignInCompany">Empresa</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalsignInPerson">Persona </button>
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalRegCompany">Empresa</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalRegPerson">Persona </button>
         </div>
       </div>
     </div>
   </div>
 
-<!-- modal Registrar Empresa -->
-
-  <div id="modalSignInCompany" class="modal" tabindex="-1" role="dialog">
+  <!-- modal Registrar Empresa -->
+  <div id="modalRegCompany" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -719,36 +721,40 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="reg_em_apellido">Nit *</label>
-              <input type="text" class="form-control" id="reg_em_apellido" required data-validation-required-message="Campo obligatorio">
+              <label for="reg_em_nit">Nit *</label>
+              <input type="text" class="form-control" id="reg_em_nit" required data-validation-required-message="Campo obligatorio">
             </div>
             <div class="form-group">
               <label for="reg_em_nombreEmpresa">Nombre de la empresa *</label>
               <input type="text" class="form-control" id="reg_em_nombreEmpresa" required data-validation-required-message="Campo obligatorio">
             </div>
             <div class="form-group">
-              <label for="reg_em_apellido">Razon social *</label>
-              <input type="text" class="form-control" id="reg_em_apellido" required data-validation-required-message="Campo obligatorio">
+              <label for="reg_em_razon">Razon social *</label>
+              <input type="text" class="form-control" id="reg_em_razon" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_em_tel">Teléfono *</label>
+              <input type="text" class="form-control" id="reg_em_tel" required data-validation-required-message="Campo obligatorio">
             </div>
             <div class="form-group">
               <label for="reg_em_email">E-mail *</label>
               <input type="text" class="form-control" id="reg_em_email" required data-validation-required-message="Campo obligatorio">
             </div>
             <div class="form-group">
-              <label for="reg_em_email">Dirección completa *</label>
+              <label for="reg_em_DireccionCompleta">Dirección completa *</label>
               <input type="text" class="form-control" id="reg_em_DireccionCompleta" required data-validation-required-message="Campo obligatorio">
             </div>
             <div class="form-group">
-              <label for="reg_em_email">Página web *</label>
-              <input type="text" class="form-control" id="reg_em_DireccionCompleta" required data-validation-required-message="Campo obligatorio">
+              <label for="reg_em_web">Página web </label>
+              <input type="text" class="form-control" id="reg_em_web" placeholder="Opcional">
             </div>
             <div class="form-group">
-              <label for="reg_per_nomreDeUsuario">Nombre de usuario</label>
+              <label for="reg_per_nomreDeUsuario">Nombre de usuario *</label>
               <input type="text" class="form-control" id="reg_em_nomreDeUsuario" required data-validation-required-message="Campo obligatorio">
             </div>
             <div class="form-group">
-              <label for="inputAddress2">Contraseña</label>
-              <input type="password" class="form-control" id="reg_em_contraseña" required data-validation-required-message="Campo obligatorio">
+              <label for="reg_em_password">Contraseña *</label>
+              <input type="password" class="form-control" id="reg_em_password" required data-validation-required-message="Campo obligatorio">
             </div>
           </form>
         </div>
@@ -762,7 +768,7 @@
 
   <!-- modal Resgistrar persona normal -->
 
-  <div id="modalsignInPerson" class="modal" tabindex="-1" role="dialog">
+  <div id="modalRegPerson" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -774,8 +780,8 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="reg_per_nombre">Documento *</label>
-              <input type="text" class="form-control" id="reg_per_nombre" required data-validation-required-message="Campo obligatorio">
+              <label for="reg_per_documento">Documento *</label>
+              <input type="text" class="form-control" id="reg_per_documento" required data-validation-required-message="Campo obligatorio">
             </div>
             <div class="form-group">
               <label for="reg_per_nombre">Nombre *</label>
@@ -786,8 +792,16 @@
               <input type="text" class="form-control" id="reg_per_apellido" required data-validation-required-message="Campo obligatorio">
             </div>
             <div class="form-group">
+              <label for="reg_per_telefono">Teléfono *</label>
+              <input type="text" class="form-control" id="reg_per_telefono" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
               <label for="reg_per_email">E-mail *</label>
               <input type="text" class="form-control" id="reg_per_email" required data-validation-required-message="Campo obligatorio">
+            </div>
+            <div class="form-group">
+              <label for="reg_per_web">Pagina Web *</label>
+              <input type="text" class="form-control" id="reg_per_web" placeholder="Opcional">
             </div>
             <div class="form-group">
               <label for="reg_per_nomreDeUsuario">Nombre de usuario *</label>
@@ -807,10 +821,7 @@
     </div>
   </div>
 
-<!-- //////////////////////////////////////////// end LOG AND SIGN //////////////////////////-->
-
-
-
+<!-- ////////////////////////////// END MODAL LOG AND SIGN //////////////////////////-->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
