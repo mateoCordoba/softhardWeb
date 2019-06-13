@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Administrador</title>
+	<title>Sys Administrador</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/datepicker3.css" rel="stylesheet">
@@ -252,6 +252,7 @@
 			</div>
 		</div><!--/.row-->
 
+
 	</div>
 
 	<!--//////////////////////////////////////////////////////////////// -->
@@ -375,9 +376,7 @@
 				<div class="panel-heading">
 					CLIENTES PERSONAS
 					<ul class="pull-right panel-settings panel-button-tab-right">
-						<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
-							<em class="fa fa-cogs"></em>
-						</a>
+						<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#"><em class="fa fa-cogs"></em></a>
 							<ul class="dropdown-menu dropdown-menu-right">
 								<li>
 									<ul class="dropdown-settings">
@@ -403,6 +402,7 @@
 								<th scope="col">password</th>
 								<th></th>
 								<th></th>
+                <th></th><!-- Permisos -->
 	            </tr>
 	          </thead>
 	          <tbody>
@@ -418,12 +418,12 @@
 	              <td>****</td>
 								<td><button class="btn btn-primary btn-sm" type="button">E</button></td>
 								<td><button class="btn btn-primary btn-sm" type="button">X</button></td>
-
+                <td><button class="btn btn-primary btn-sm" type="button">p</button></td>
 	            </tr>
 	          </tbody>
 	        </table>
 				</div>
-			</div>
+		</div>
 		<br>
 
 		<!-- CLIENTES EMPRESAS-->
@@ -464,6 +464,7 @@
 	                <th scope="col">password</th>
 									<th></th>
 									<th></th>
+                  <th></th><!-- Permisos -->
 	              </tr>
 	            </thead>
 
@@ -481,12 +482,13 @@
 									<td>*********</td>
 	                <td><button class="btn btn-primary btn-sm" type="button">E</button></td>
 	                <td><button class="btn btn-primary btn-sm" type="button">X</button></td>
-	              </tr>
+                  <td><button class="btn btn-primary btn-sm" type="button">p</button></td>
+                </tr>
 	            </tbody>
 	          </table>
 
 					</div>
-				</div>
+		</div>
 		<br>
 
 		<!-- EMPLEADOS -->
@@ -531,7 +533,7 @@
 								<th scope="col">Cargo</th>
 								<th></th>
 								<th></th>
-
+                <th></th><!-- Permisos -->
 	            </tr>
 	          </thead>
 	          <tbody>
@@ -546,7 +548,7 @@
 	              <td>Gerente General</td>
 	              <td><button class="btn btn-primary btn-sm" type="button">E</button></td>
 	              <td><button class="btn btn-primary btn-sm" type="button">X</button></td>
-
+                <td><button class="btn btn-primary btn-sm" type="button">p</button></td>
 	            </tr>
 	          </tbody>
 	        </table>
@@ -554,63 +556,61 @@
 			</div>
 		<br>
 
-		<!-- PROVEEDORES-->
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				PROVEEDORES
-				<ul class="pull-right panel-settings panel-button-tab-right">
-					<li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
-						<em class="fa fa-cogs"></em>
-					</a>
-					<ul class="dropdown-menu dropdown-menu-right">
-						<li>
-							<ul class="dropdown-settings">
-								<li><a data-toggle="modal" data-target="#modalRegProvider"><em class="fa fa-cog"></em> Agregar proveedor</a></li>
+    <!-- PROVEEDORES-->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        PROVEEDORES
+        <ul class="pull-right panel-settings panel-button-tab-right">
+          <li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
+            <em class="fa fa-cogs"></em>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <ul class="dropdown-settings">
+                <li><a data-toggle="modal" data-target="#modalRegProvider"><em class="fa fa-cog"></em> Agregar proveedor</a></li>
 
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
-			<div class="panel-body">
-				<table class="table table-dark">
-					<thead>
-						<tr>
-							<th scope="col">ID</th>
-							<th scope="col">Nit</th>
-							<th scope="col">Nombre Empresa</th>
-							<th scope="col">Razon social</th>
-							<th scope="col">Teléfono</th>
-							<th scope="col">E-mail</th>
-							<th scope="col">Direccion </th>
-							<th scope="col">Pagina Web</th>
-							<th></th>
-							<th></th>
-						</tr>
-					</thead>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span></div>
+      <div class="panel-body">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nit</th>
+              <th scope="col">Nombre Empresa</th>
+              <th scope="col">Razon social</th>
+              <th scope="col">Teléfono</th>
+              <th scope="col">E-mail</th>
+              <th scope="col">Direccion </th>
+              <th scope="col">Pagina Web</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
 
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>12345434</td>
-							<td>SOFTH-HARD</td>
-							<td>Soft-Hard Solution</td>
-							<td>99999999</td>
-							<td>SOFTHARDS@.com</td>
-							<td>Cr ?? ...</td>
-							<td>www.SoftHardSolutions.com</td>
-							<td><button class="btn btn-primary btn-sm" type="button">E</button></td>
-							<td><button class="btn btn-primary btn-sm" type="button">X</button></td>
-						</tr>
-					</tbody>
-				</table>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>12345434</td>
+              <td>SOFTH-HARD</td>
+              <td>Soft-Hard Solution</td>
+              <td>99999999</td>
+              <td>SOFTHARDS@.com</td>
+              <td>Cr ?? ...</td>
+              <td>www.SoftHardSolutions.com</td>
+              <td><button class="btn btn-primary btn-sm" type="button">E</button></td>
+              <td><button class="btn btn-primary btn-sm" type="button">X</button></td>
+            </tr>
+          </tbody>
+        </table>
 
-			</div>
-		</div>
-		<!-- END CLIENTES -->
-		<br>
-
+      </div>
+    </div>
+    <br>
 	</div>
 	<!--////////////////////// END  USUARIOS  ////////////////////////// -->
 	<!--//////////////////////////////////////////////////////////////// -->
@@ -710,6 +710,7 @@
 									<th scope="col">Metodo de pago</th>
 									<th></th><!-- Eliminar -->
 									<th></th><!-- Editar -->
+
 								</tr>
 							</thead>
 
@@ -764,7 +765,7 @@
 									<td>luigi bros</td>
 									<td><button class="btn btn-primary btn-sm" type="button">X</button></td>
 									<td><button class="btn btn-primary btn-sm" type="button">E</button></td>
-								</tr>
+                </tr>
 							</tbody>
 						</table>
 
@@ -775,89 +776,144 @@
 	<!--///////////////// END HISTORIAL  COMPRAS/VENTAS/////////////////// -->
 	<!--////////////////////////////////////////////////////////////////// -->
 
-	<!-- Contact -->
-	<div id="admin_contact" class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+  <!--////////////////////////////////////////////////////////////////// -->
+	<!--/////////////// HISTORIAL MOVIMIENTOS DE USUARIOS  /////////////// -->
+	<div id="historial" class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<!-- TITULO SECCIÓN -->
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="page-header">CONTACTO CON ADMINISTRACIÓN</h1>
+				<h1 class="page-header">HISTORIAL MOVIMIENTOS USUARIOS</h1>
 			</div>
 		</div>
-	  <!-- VENTANA DE CHAT -->
-	  <div class="row">
-	    <div class="col-md-12">
-	      <div class="panel panel-default chat">
-	        <div class="panel-heading">
-	          Chat
-	          <ul class="pull-right panel-settings panel-button-tab-right">
-	            <li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
-	              <em class="fa fa-cogs"></em></a>
-	              <ul class="dropdown-menu dropdown-menu-right">
-	              <li>
-	                <ul class="dropdown-settings">
-	                  <li><a href="#"><em class="fa fa-cog"></em> Settings 1 </a></li>
-	                  <li class="divider"></li>
-	                  <li><a href="#"><em class="fa fa-cog"></em> Settings 2 </a></li>
-	                  <li class="divider"></li>
-	                  <li><a href="#"><em class="fa fa-cog"></em> Settings 3 </a></li>
-	                </ul>
-	              </li>
-	            </ul>
-	            </li>
-	          </ul>
-	          <span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span>
-	        </div>
-	        <div class="panel-body">
-	          <ul>
-	            <li class="left clearfix">
-	              <span class="chat-img pull-left">
-	                <div class="profile-userpic">
-	                  <img src="img/2.jpg" class="img-responsive" alt="">
-	                </div>
-	              </span>
-	              <div class="chat-body clearfix">
-	                <div class="header"><strong class="primary-font">Mateo Cordoba</strong> <small class="text-muted">32 min</small></div>
-	                <p></p>
-	              </div>
-	            </li>
-	            <li class="right clearfix">
-	              <span class="chat-img pull-right">
-	                <div class="profile-userpic">
-	                  <img src="img/1.jpg" class="img-responsive" alt="">
-	                </div>
-	              </span>
-	              <div class="chat-body clearfix">
-	                <div class="header"><strong class="pull-left primary-font">Jeison Sancchez</strong> <small class="text-muted">6 min</small></div>
-	                <p></p>
-	              </div>
-	            </li>
-	            <li class="left clearfix">
-	              <span class="chat-img pull-left">
-	                <div class="profile-userpic">
-	                  <img src="img/2.jpg" class="img-responsive" alt="">
-	                </div>
-	              </span>
-	              <div class="chat-body clearfix">
-	                <div class="header"><strong class="primary-font">Mateo Cordoba</strong> <small class="text-muted">32 min</small></div>
-	                <p></p>
-	              </div>
-	            </li>
-	          </ul>
-	        </div> <!-- end panel body -->
-	        <div class="panel-footer">
-	          <div class="input-group">
-	            <input id="btn-input" type="text" class="form-control input-md" placeholder="ingrese Mensaje" />
-	            <span class="input-group-btn"><button class="btn btn-primary btn-md" id="btn-chat">Buscar</button></span>
-	          </div>
-	        </div>
-	      </div>
-	    </div><!--/.col-->
-	  </div><!--/.row-->
-	</div>
-	<!-- END Contact -->
+
+		<!-- Historial movimientos de usuarios -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				MOVIMIENTOS DE USUARIOS
+				<span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span>
+			</div>
+			<div class="panel-body">
+						<table class="table table-dark">
+							<thead>
+								<tr>
+									<th scope="col">Usuario</th>
+									<th scope="col">Rol</th>
+									<th scope="col">Acción</th>
+									<th scope="col">Fecha</th>
+									<th scope="col">Hora</th>
+									<th scope="col">Desc Acción</th>
+									<th></th><!-- Editar -->
+									<th></th><!-- Eliminar -->
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td>Marcos Alirio</td>
+									<td>Cliente persona</td>
+									<td>Realizo compra</td>
+                  <td>17/03/2019</td>
+									<td>12:30 pm</td>
+									<td>realizo compra de fuent de poder</td>
+									<td><button class="btn btn-primary btn-sm" type="button">X</button></td>
+									<td><button class="btn btn-primary btn-sm" type="button">E</button></td>
+                </tr>
+							</tbody>
+						</table>
+
+					</div>
+		</div> <!-- END ventas -->
+		<br>
+	</div> <!-- END col-sm-9 -->
+	<!--///////////////// END HISTORIAL  COMPRAS/VENTAS/////////////////// -->
+	<!--////////////////////////////////////////////////////////////////// -->
+
+  <!-- Contact -->
+  <div id="sys_admin_contact" class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+      <div class="row">
+  			<div class="col-lg-12">
+  				<h1 class="page-header">CONTACTO CON EMPLEADOS</h1>
+  			</div>
+  		</div>
+    <!-- VENTANA DE CHAT -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default chat">
+          <div class="panel-heading">
+            Chat
+            <ul class="pull-right panel-settings panel-button-tab-right">
+              <li class="dropdown"><a class="pull-right dropdown-toggle" data-toggle="dropdown" href="#">
+                <em class="fa fa-cogs"></em></a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                  <ul class="dropdown-settings">
+                    <li><a href="#"><em class="fa fa-cog"></em> Settings 1 </a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><em class="fa fa-cog"></em> Settings 2 </a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><em class="fa fa-cog"></em> Settings 3 </a></li>
+                  </ul>
+                </li>
+              </ul>
+              </li>
+            </ul>
+            <span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li class="left clearfix">
+                <span class="chat-img pull-left">
+                  <div class="profile-userpic">
+                    <img src="img/2.jpg" class="img-responsive" alt="">
+                  </div>
+                </span>
+                <div class="chat-body clearfix">
+                  <div class="header"><strong class="primary-font">Mateo Cordoba</strong> <small class="text-muted">32 min</small></div>
+                  <p></p>
+                </div>
+              </li>
+              <li class="right clearfix">
+                <span class="chat-img pull-right">
+                  <div class="profile-userpic">
+                    <img src="img/1.jpg" class="img-responsive" alt="">
+                  </div>
+                </span>
+                <div class="chat-body clearfix">
+                  <div class="header"><strong class="pull-left primary-font">Jeison Sancchez</strong> <small class="text-muted">6 min</small></div>
+                  <p></p>
+                </div>
+              </li>
+              <li class="left clearfix">
+                <span class="chat-img pull-left">
+                  <div class="profile-userpic">
+                    <img src="img/2.jpg" class="img-responsive" alt="">
+                  </div>
+                </span>
+                <div class="chat-body clearfix">
+                  <div class="header"><strong class="primary-font">Mateo Cordoba</strong> <small class="text-muted">32 min</small></div>
+                  <p></p>
+                </div>
+              </li>
+            </ul>
+          </div> <!-- end panel body -->
+          <div class="panel-footer">
+            <div class="input-group">
+              <input id="btn-input" type="text" class="form-control input-md" placeholder="ingrese Mensaje" />
+              <span class="input-group-btn"><button class="btn btn-primary btn-md" id="btn-chat">Buscar</button></span>
+            </div>
+          </div>
+        </div>
+      </div><!--/.col-->
+    </div><!--/.row-->
+  </div>
+  <!-- END Contact -->
 
 	<div class="col-sm-12">
 		<p class="back-link">Lumino Theme by <a href="https://www.medialoot.com">Medialoot</a></p>
 	</div>
+
+
 
 
 	<!--////////////////////////////////////////////////////////////////// -->

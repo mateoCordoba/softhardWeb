@@ -800,7 +800,7 @@ a.label:hover, a.label:focus {
   height: 50px;
   font-size: 15px;
   line-height: 2em;
-  color: #444444; }
+  color: #30a5ff; }
 
 .sidebar ul.nav ul.children {
   width: auto;
@@ -1025,7 +1025,7 @@ h1.page-header {
 
 .fixed-table-pagination .pagination-detail {
   margin-top: 20px; }
-  
+
 p.back-link {
   text-align: center;
   margin-bottom: 20px;

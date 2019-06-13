@@ -4,9 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
 
+
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+div#em_buscarProducto{
+  width: 30%;
 }
 
 p {
@@ -14,7 +20,7 @@ p {
 }
 
 a {
-  color: white;
+  color: #30a5ff;
 }
 
 a:hover {
@@ -88,7 +94,7 @@ section h3.section-subheading {
 
 
 ::selection {
-  background: #1783d3;
+  background: #30a5ff;
   text-shadow: none;
 }
 
@@ -125,7 +131,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color:#1783d3;
+  color:#30a5ff;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -136,9 +142,9 @@ img::-moz-selection {
   color: white;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
-
+<em class="fa fa-toggle-up"></em>
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color:#1783d3;
+  color:#30a5ff;
 }
 
 @media (min-width: 992px) {
@@ -175,13 +181,12 @@ header.masthead {
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: absolute;
-  background-size: cover;
+  background-size: contain;
 }
 
 
 header.masthead .intro-text {
-  padding-top: 150px;
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 
@@ -225,7 +230,7 @@ header.masthead .intro-text .intro-heading {
 
   .logo, #myLogo{
     position: center;
-    margin-left: 110px;
+    margin-left: 19%;
     height: 400px;
     width: 500px;
 
@@ -315,6 +320,8 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio * {
   z-index: 2;
+  width:100%;
+
 }
 
 @media (min-width: 767px) {
@@ -390,7 +397,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #1783d3;
+  background-color: #30a5ff;
 }
 
 .timeline > li .timeline-image h4 {
@@ -566,6 +573,7 @@ section#contact .form-group input.form-control {
 
 section#contact .form-group textarea.form-control {
   height: 248px;
+  width: 100%;
 }
 
 section#contact .form-control:focus {
@@ -642,4 +650,17 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .mybtn{
   background-color: Black;
   color: black;
+}
+
+div.container div.col-lg-12 form#contactForm div.row div#chatEmpleado{
+  width: 100%;
+}
+
+fieldset.searchProduct{
+  width:100%;
+}
+
+div#searchProduct{
+  width: 100%;
+  margin-left:20%;
 }
